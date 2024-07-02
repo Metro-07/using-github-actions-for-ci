@@ -42,7 +42,9 @@ jobs:
           echo "ls command"
           ls -lh
 
-    - name: Execute pwd command
+    - name: Execute multipe commands
       run: |
           echo "pwd command"
+          pwd
+          cd ~
           pwd
