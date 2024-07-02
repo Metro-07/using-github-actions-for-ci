@@ -37,7 +37,12 @@ jobs:
     - name: Show text
       run: echo "My text"
 
-    - name: Execute commands
+    - name: Execute ls command
       run: |
-          ls -l
+          echo "ls command"
+          ls -lh
+
+    - name: Execute pwd command
+      run: |
+          echo "pwd command"
           ${PWD}
