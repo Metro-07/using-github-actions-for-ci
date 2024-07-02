@@ -45,4 +45,4 @@ jobs:
     - name: Execute pwd command
       run: |
           echo "pwd command"
-          ${PWD}
+          pwd
