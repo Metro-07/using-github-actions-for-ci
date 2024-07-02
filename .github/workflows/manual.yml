@@ -42,9 +42,14 @@ jobs:
           echo "ls command"
           ls -lh
 
-    - name: Execute multipe commands
+    - name: Execute multiple commands
       run: |
           echo "pwd command"
           pwd
           cd ~
           pwd
+          
+    - name: Install vcpkg
+      run: |
+          echo "Install vcpkg"
+          . <(curl https://aka.ms/vcpkg-init.sh -L)
